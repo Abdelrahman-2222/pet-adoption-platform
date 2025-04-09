@@ -1,0 +1,1014 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html 
+{
+    font-size: 10px;
+    height: 100%;
+}
+
+/* Start -- First Part */
+
+.main-section
+{
+    background: linear-gradient(to right, rgba(8, 19, 64, 1) 0%, rgba(28, 40, 103, 1) 30%, rgba(95, 37, 131, 1) 70%, rgba(130, 60, 175, 1) 100%);
+}
+section.first-section
+{
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+.first-container
+{
+    width: 60%;
+}
+
+
+.first-container header
+{
+    font-size: 7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+section.first-section p
+{
+    width: 85%;
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 5%;
+}
+
+section.first-section button
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+section.first-section .firstButton
+{
+    background-color: blue;
+    margin-right: 2%;
+}
+
+section.first-section .secondButton
+{
+    background-color: inherit;
+}
+
+section.second-section
+{
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: white;
+}
+
+.second-container
+{
+    display: flex;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    justify-content: space-between;
+    height: 60vh;
+    width: 100%;
+}
+
+.pet-properties
+{
+    border: 1px solid rgba(100, 22, 156, 0.822);
+    margin-right: 2%;
+    font-size: 2rem;
+    width: 25%;
+    padding: 2%;
+}
+
+.pet-properties h3
+{
+    font-size: 1.8rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.pet-properties p
+{
+    font-size: 1.4rem;
+    text-align: left;
+} 
+
+/* End -- First Part */
+
+/* Start -- Second Part  */
+
+
+.third-section
+{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.first-part
+{
+    width: 50%;
+}
+
+.first-part h1
+{
+    font-size: 4rem;
+    padding-top: 15%;
+}
+
+.first-part ul
+{
+    font-size: 1.5rem;
+    list-style-type: none;
+    display: flex;
+}
+
+.first-part li
+{
+    padding-right: 2%;
+    padding-bottom: 6%;
+    padding-top: 4%;
+}
+
+.unique
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    justify-content: space-between;
+}
+
+.pet-cards
+{
+    display: flex;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 20px;
+    margin-right: 2%;
+    font-size: 2rem;
+    width: 48%;
+    margin-bottom: 2%;
+}
+
+.pet-cards img 
+{
+    width: 40%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+.third-container
+{
+    display: inline;
+    padding-top: 2%;
+    padding-left: 2%;
+    text-align: justify;
+    font-size: 2.3rem;
+}
+
+.third-container h3
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.third-container p
+{
+    padding-bottom: 5%;
+}
+
+.third-container h5
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer 
+{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2%;
+}
+
+
+/* FORM */
+/* .modal
+{
+    font-size: 2rem;
+    width: 45%;
+
+    font-size: 2rem;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.modal {
+    font-size: 2rem;
+    width: 100%; /* Make it cover full width */
+    height: 100%; /* Make it cover full height */
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    overflow: auto;
+}
+
+/* .modal-content
+{
+    display: flex;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 20px;
+    font-size: 2rem;
+    position: relative;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalopen 0.4s;
+    background-color: white;
+} */
+
+.modal-content {
+    width: 45%; /* Width of the actual content */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    /* rest of your styles */
+    display: flex;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 20px;
+    font-size: 2rem;
+    position: relative;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.modal-content img
+{
+    width: 30%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+form
+{
+    width: 62vh;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+form input, textarea
+{
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    width: 100%;
+    height: 5vh;
+    padding-left: 2%;
+}
+
+form textarea
+{
+    padding-top: 1.5%;
+    resize: none;
+}
+
+.submit-btn
+{
+    width: 20%;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+    font-size: 2rem;
+    position: absolute;
+    right: 0%;
+    margin-top: 2%;
+}
+
+.close-btn
+{
+    position: absolute;
+    left: 95%;
+    top: 1%;
+    font-size: 3rem;
+
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Media Queries
+/* @media only screen and (max-width: 600px) {...} */
+@media only screen and (max-width: 400px){
+    .first-container header
+    {
+        font-size: 1.8rem;
+    }
+    section.first-section p
+    {
+        font-size: 0.4rem;
+    }
+    .second-container
+    {
+        display: block;
+        width: 100%;
+        height: max-content;
+        
+    }
+
+    .pet-properties
+    {
+        margin-top: 5%;
+    }
+
+    .pet-properties, .pet-properties p
+    {
+        width: 100%;
+    }
+
+    .pet-cards
+    {
+        width: 30%;
+    }
+
+    .first-part h1 {
+        font-size: 0.8rem;
+        padding-top: 15%;
+    }
+
+    
+    .first-part ul 
+    {
+        font-size: 0.7rem;
+        display: flex;
+    }
+
+    .container
+    {
+        display: block;
+        flex-wrap: wrap;
+        width: 100vh;
+    }
+    .third-container
+    {
+        font-size: 1.1rem;
+    }
+    .third-container p 
+    {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    footer 
+    {
+        font-size: 1rem;
+    }
+
+    form
+    {
+        width: 87%;
+    }
+
+    .modal-content
+    {
+        height: 35vh;
+        width: 35vh;
+    }
+
+    .submit-btn
+    {
+        width: 15vh;
+        left: 25%;
+        bottom: 1%;
+        font-size: 1.5rem;
+    }
+
+    .close-btn
+    {
+        left: 90%;
+    }
+
+    .modal-content img
+    {
+        display: none;
+    }
+}
+/* @media only screen and (max-width: 600px) {...} */
+@media only screen and (min-width: 400px) and (max-width: 500px){
+    .first-container header
+    {
+        font-size: 2.4rem;
+    }
+    section.first-section p
+    {
+        font-size: 0.6rem;
+    }
+    .second-container
+    {
+        display: block;
+        width: 100%;
+        height: max-content;
+        
+    }
+
+    .pet-cards
+    {
+        width: 40%;
+    }
+    .pet-properties
+    {
+        margin-top: 5%;
+    }
+
+    .pet-properties, .pet-properties p
+    {
+        width: 100%;
+    }
+
+    .first-part h1 {
+        font-size: 2rem;
+        padding-top: 15%;
+    }
+
+    
+    .first-part ul 
+    {
+        font-size: 1.3rem;
+        display: flex;
+    }
+
+    .container
+    {
+        display: block;
+        flex-wrap: wrap;
+        width: 117vh;
+    }
+    .third-container
+    {
+        font-size: 1.5rem;
+    }
+    .third-container p 
+    {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    footer 
+    {
+        font-size: 1.4rem;
+    }
+
+    form
+    {
+        width: 87%;
+    }
+
+    .modal-content
+    {
+        height: 40vh;
+        width: 40vh;
+    }
+
+    .submit-btn
+    {
+        width: 20vh;
+        left: 25%;
+    }
+
+    .close-btn
+    {
+        left: 90%;
+    }
+
+    .modal-content img
+    {
+        display: none;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+@media only screen and (min-width: 500px) and (max-width: 600px){
+    .first-container header
+    {
+        font-size: 2.7rem;
+    }
+    section.first-section p
+    {
+        font-size: 0.8rem;
+    }
+
+    .second-container
+    {
+        display: block;
+        width: 100%;
+        height: max-content;
+        
+    }
+
+    .pet-properties
+    {
+        margin-top: 5%;
+    }
+
+    .pet-properties, .pet-properties p
+    {
+        width: 100%;
+    }
+
+    .first-part h1 {
+        font-size: 2rem;
+        padding-top: 15%;
+    }
+
+    
+    .first-part ul 
+    {
+        font-size: 1.3rem;
+        display: flex;
+    }
+
+    .container
+    {
+        display: block;
+        width: 100vh;
+    }
+    .third-container
+    {
+        font-size: 1.5rem;
+    }
+    .third-container p 
+    {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    footer 
+    {
+        font-size: 1.4rem;
+    }
+
+    form
+    {
+        width: 90%;
+    }
+
+    .modal-content
+    {
+        font-size: 2rem;
+        height: 40vh;
+        width: 50vh;
+        padding-right: 4%;
+    }
+
+    .submit-btn
+    {
+        width: 20vh;
+        left: 20%;
+    }
+
+    .close-btn
+    {
+        left: 95%;
+        margin-left: -1%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 650px){
+    .first-container header
+    {
+        font-size: 3.4rem;
+    }
+    section.first-section p
+    {
+        font-size: 1rem;
+    }
+    .second-container
+    {
+        display: block;
+        width: 100%;
+        height: max-content;
+        
+    }
+
+    .pet-properties
+    {
+        margin-top: 5%;
+    }
+
+    .pet-properties, .pet-properties p
+    {
+        width: 100%;
+    }
+
+    .first-part h1 {
+        font-size: 2.2rem;
+        padding-top: 15%;
+    }
+
+    
+    .first-part ul 
+    {
+        font-size: 1.5rem;
+        display: flex;
+    }
+
+    .container
+    {
+        display: block;
+        flex-wrap: wrap;
+        width: 117vh;
+    }
+
+    .third-container
+    {
+        font-size: 1.5rem;
+    }
+    .third-container p 
+    {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    footer 
+    {
+        font-size: 1.6rem;
+    }
+
+    form
+    {
+        width: 90%;
+    }
+
+    .modal-content
+    {
+        font-size: 2rem;
+        height: 40vh;
+        width: 50vh;
+        padding-right: 4%;
+    }
+
+    .submit-btn
+    {
+        width: 20vh;
+        left: 20%;
+    }
+
+    .close-btn
+    {
+        left: 95%;
+        margin-left: -1%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 650px) and (max-width: 768px){
+    .first-container header
+    {
+        font-size: 3.5rem;
+    }
+    section.first-section p
+    {
+        font-size: 1.2rem;
+    }
+
+    .second-container
+    {
+        display: block;
+        width: 100%;
+        height: max-content;
+        
+    }
+
+    .pet-properties
+    {
+        margin-top: 5%;
+    }
+
+    .pet-properties, .pet-properties p
+    {
+        width: 100%;
+    }
+
+    .first-part h1 {
+        font-size: 2.2rem;
+        padding-top: 15%;
+    }
+
+    
+    .first-part ul 
+    {
+        font-size: 1.5rem;
+        display: flex;
+    }
+
+    .container
+    {
+        display: block;
+        flex-wrap: wrap;
+        width: 117vh;
+    }
+
+    .third-container
+    {
+        font-size: 1.6rem;
+    }
+    .third-container p 
+    {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    footer 
+    {
+        font-size: 1.6rem;
+    }
+
+    form
+    {
+        width: 90%;
+    }
+
+    .modal-content
+    {
+        font-size: 2rem;
+        height: 40vh;
+        width: 50vh;
+        padding-right: 4%;
+    }
+
+    .submit-btn
+    {
+        width: 20vh;
+        left: 20%;
+    }
+
+    .close-btn
+    {
+        left: 95%;
+        margin-left: -1%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 820px){
+    .first-container header
+    {
+        font-size: 4.4rem;
+    }
+    section.first-section p
+    {
+        font-size: 1.4rem;
+    }
+
+    .pet-properties
+    {
+        margin-top: 5%;
+    }
+
+    .pet-properties, .pet-properties p
+    {
+        width: 100%;
+    }
+
+    .first-part h1 {
+        font-size: 2.4rem;
+        padding-top: 15%;
+    }
+
+    
+    .first-part ul 
+    {
+        font-size: 1.7rem;
+        display: flex;
+    }
+
+    .container
+    {
+        display: block;
+        flex-wrap: wrap;
+        width: 117vh;
+    }
+
+    .third-container
+    {
+        font-size: 1.7rem;
+    }
+    .third-container p 
+    {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    footer 
+    {
+        font-size: 1.8rem;
+    }
+
+
+    form
+    {
+        width: 80%;
+    }
+
+    .modal-content
+    {
+        font-size: 2rem;
+        height: 40vh;
+        width: 50vh;
+        padding-right: 4%;
+    }
+
+    .submit-btn
+    {
+        width: 20vh;
+        left: 20%;
+    }
+
+    .close-btn
+    {
+        left: 95%;
+        margin-left: -1%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 820px) and (max-width: 992px){
+    .first-container header
+    {
+        font-size: 4.5rem;
+    }
+    section.first-section p
+    {
+        font-size: 1.6rem;
+    }
+
+    .pet-properties
+    {
+        margin-top: 5%;
+    }
+
+    .pet-properties, .pet-properties p
+    {
+        width: 100%;
+    }
+
+    .first-part h1 {
+        font-size: 2.5rem;
+        padding-top: 15%;
+    }
+
+    
+    .first-part ul 
+    {
+        font-size: 1.8rem;
+        display: flex;
+    }
+    
+    .container
+    {
+        display: block;
+        flex-wrap: wrap;
+        width: 117vh;
+    }
+
+    .third-container
+    {
+        font-size: 1.8rem;
+    }
+    .third-container p 
+    {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    footer 
+    {
+        font-size: 1.8rem;
+    }
+
+    form
+    {
+        width: 80%;
+    }
+
+    .modal-content
+    {
+        font-size: 2rem;
+        height: 40vh;
+        width: 50vh;
+        padding-right: 4%;
+    }
+
+    .submit-btn
+    {
+        width: 20vh;
+        left: 20%;
+    }
+
+    .close-btn
+    {
+        left: 95%;
+        margin-left: -1%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .first-container header
+    {
+        font-size: 5.7rem;
+    }
+    section.first-section p
+    {
+        font-size: 1.8rem;
+    }
+
+    .third-container
+    {
+        font-size: 2rem;
+    }
+    .third-container p 
+    {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    form
+    {
+        width: 100%;
+    }
+
+    .modal-content
+    {
+        font-size: 2rem;
+        height: 40vh;
+        width: 55vh;
+        padding-right: 4%;
+    }
+
+    .submit-btn
+    {
+        width: 20vh;
+        left: 20%;
+    }
+
+    .close-btn
+    {
+        left: 95%;
+        margin-left: -1%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */ 
+@media only screen and (min-width: 1200px){
+    .first-container header
+    {
+        font-size: 7rem;
+    }
+}
+
+
+

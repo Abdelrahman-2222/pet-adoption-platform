@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assests/styling/style.css" />
+    <link rel="stylesheet" href="assests/styling/all.min.css" />
+    <link
+      rel="preconnect"
+      href="assests/fonts/Montserrat-Font/Montserrat-Black.ttf"
+    />
+    <link
+      rel="preconnect"
+      href="assests/fonts/Montserrat-Font/Montserrat-BlackItalic.ttf"
+    />
+
+    <title>Document</title>
+  </head>
+  <body class="overlay">
+    <main class="main-container">
+      <section class="main-section">
+        <section class="first-section">
+          <div class="first-container">
+            <header>
+              <h1>Find Your New Bestie</h1>
+            </header>
+            <p>
+              The most amazing list of adoptable pets at your fingertips.
+              Updated fresh daily.
+            </p>
+            <button class="firstButton">View Pets</button>
+            <button class="secondButton">Manage Pets</button>
+          </div>
+        </section>
+
+        <section class="second-section">
+          <div class="second-container">
+            <article class="pet-properties first" id="pet-properties1">
+              <i class="fa-solid fa-sun"></i>
+              <h3>Sunny Play</h3>
+              <p>
+                Our center is located in <br />
+                beautiful Miami, and it's <br />
+                currently 84°F at our pet <br />
+                palyground.
+              </p>
+            </article>
+            <article class="pet-properties second" id="pet-properties2">
+              <i class="fa-regular fa-face-kiss-wink-heart"></i>
+              <h3>Dedicated Staff</h3>
+              <p>
+                Our center has over 70 <br />
+                volunteers who play with the <br />
+                pets four times daily.
+              </p>
+            </article>
+            <article class="pet-properties third" id="pet-properties3">
+              <i class="fa-solid fa-trophy"></i>
+              <h3>Voted #1</h3>
+              <p>
+                For the last five years we've <br />
+                consistently been voted the <br />
+                #1 pet adoption center in the <br />
+                state.
+              </p>
+            </article>
+            <article class="pet-properties fourth" id="pet-properties4">
+              <i class="fa-solid fa-moon"></i>
+              <h3>Nightly Yoga</h3>
+              <p>
+                Every night our staff leads a <br />
+                yoga session and the animals <br />
+                are free to roam around and <br />
+                relax around people.
+              </p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="third-section">
+        <div class="first-part">
+          <h1>Meet Our Friends</h1>
+          <ul>
+            <li>Show me:</li>
+            <li class="unique">All pets</li>
+            <li>Only Dogs</li>
+            <li>Only Cats</li>
+          </ul>
+        </div>
+        <div class="container">
+          <article class="pet-cards" id="petCards1">
+            <img
+              src="assests/img/puppy1.jpg"
+              alt="Pomeranian dog"
+              width="60"
+              height="80"
+            />
+            <div class="third-container first">
+              <a href="#" class="modal-trigger"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <h3>Barksalot</h3>
+            <p>
+              Barksalot is a sweet and lovabel 3 year old <br />
+              ball of fluff. He loves carrots, celery, and<br />
+              playing fetch.
+            </p>
+            <h5>2 years old</h5>
+            </div>
+          </article>
+
+          <article class="pet-cards" id="petCards2">
+            <img
+              src="assests/img/puppy2.jpg"
+              alt="Second Puppy"
+              width="60"
+              height="80"
+            />
+            <div class="third-container second">
+              <a href="#" class="modal-trigger"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <h3>Woof</h3>
+            <p>
+              Woof is a very talkative and sweet pup. She<br />
+              love beets, plums, cuddles and jumping<br />
+              over low fences.
+            </p>
+            <h5>less than a year old</h5>
+            </div>
+
+          </article>
+
+          <article class="pet-cards third" id="petCards3">
+            <img
+              src="assests/img/kitty1.jpg"
+              alt="First Kitty"
+              width="60"
+              height="80"
+            />
+            <div class="third-container third">
+              <a href="#" class="modal-trigger"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <h3>Meowsalot</h3>
+            <p>
+              Meowsalot is the most talkative cat we've<br />
+              ever come across. Constant meowing,<br />
+              chriping and purring!.
+            </p>
+            <h5>1 year old</h5>
+            </div>
+          </article>
+
+          <article class="pet-cards fourth" id="petCards4">
+            <img
+              src="assests/img/kitty2.jpg"
+              alt="Second Kitty"
+              width="60"
+              height="80"
+            />
+            <div class="third-container fourth">
+              <a href="#" class="modal-trigger"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <h3>Purrsloud</h3>
+            <p>
+              Purrsloud has the loudest and most relaxing<br />
+              purr that's come through our center. Come<br />
+              heat it yourself.
+            </p>
+            <h5>4 years old</h5>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>&copy; 2023 Fake Adoption Center: All rights reserved.</p>
+      </div>
+    </footer>
+    <div id="formModal" class="modal">
+      <div class="modal-content">
+        <img id="img" src="assests/img/puppy1.jpg" alt="puppy" width = "50px" height="50px">
+        <form
+          enctype="multipart/form-data"
+          method="post"
+          id="adoptionForm"
+        >
+          <div class="form-group">
+            <input type="text" placeholder="Name" name="name" required minlength="5" maxlength="30"><br><br>
+        </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" id="email" name="email" required><br><br>
+        </div>
+          <div class="form-group">
+            <!--pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"-->
+            <input type="text" placeholder="What's the word for a baby dog?" id="word" name="word" required ><br><br>
+        </div>
+          <div class="form-group">
+            <textarea name="myText" placeholder="Comment(optional)" id="textArea"></textarea>
+        </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <span class="close-btn">&times;</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="assests/styling/all.min.js"></script>
+  </body>
+</html>
